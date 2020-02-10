@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Applying software engineering principles to our laws</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Applying software engineering principles to our laws</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I think that the French political system is outdated and has become too complex.
+</section>
+<section data-field="body" class="e-content">
+<section name="417d" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="3e25" id="3e25" class="graf graf--h3 graf--leading graf--title">Applying software engineering principles to our laws</h3><p name="48e1" id="48e1" class="graf graf--p graf-after--h3">I think that the French political system is outdated and has become too complex.</p><p name="2170" id="2170" class="graf graf--p graf-after--p">As a software engineer, I believe that some of our best practices could (and should?) apply to the way our laws are written. Because laws can be considered as the source code of a democratic system.</p><p name="6c18" id="6c18" class="graf graf--p graf-after--p">Here are a few Software Development principles that could also be applied to our laws:</p><ul class="postList"><li name="8d74" id="8d74" class="graf graf--li graf-after--p">Separation of concern: The code should be divided in well-designed modules that have only one purpose. Each module has publicly visible interfaces that can be used by other modules, describing its features/functionalities, and thus, a contract that they agree to fulfil towards these modules.</li><li name="5bf3" id="5bf3" class="graf graf--li graf-after--li">Modularity; each file defines a module that relies on other modules. Each module can be implemented in various ways, as long as it respects it’s interfaces with other modules.</li><li name="d0f6" id="d0f6" class="graf graf--li graf-after--li">Versionning: If an interface is to be changed, the codebase’s version increases. It should be easy to visualize differences between two versions, and to revert back to a previous version, if a later version does not work as expected.</li><li name="951b" id="951b" class="graf graf--li graf-after--li">Readability: each file should be less than 200 lines of code. Otherwise, you can probably refactor/redesign your code.</li><li name="e909" id="e909" class="graf graf--li graf-after--li">Complexity: The more complex the code, the less people will be able to use / exploit it, and the less people will accept to maintain it. And thus, the more bugs will occur from this code.</li><li name="cf5f" id="cf5f" class="graf graf--li graf-after--li">Bug: unexpected behavior of a code base in a specific context/situation. Happens when rules to be implemented were not clear enough, of if the code incorrectly implement these rules.</li><li name="53a7" id="53a7" class="graf graf--li graf-after--li">Technical debt: when too many shortcuts and workarounds (a,k,a quick hacks) were made in the source code, the complexity of the code increases, thus its maintainability decreases very quickly. Some time must be planned ahead for regular refactoring, in order to clean and simplify the code.</li><li name="d0fe" id="d0fe" class="graf graf--li graf-after--li">Automated testing consists of a list of scenarios with an expected outcome (or behavior) that can be used to check that the source code behaves as expected, even after changes. If expected outcomes change, it means that rules have changed.</li><li name="a5ba" id="a5ba" class="graf graf--li graf-after--li">Test-driven development consists of writing tests (rules) first, and then writing the code that complies to these tests. It ensures that rules prevail, and that implementation can change safely over time.</li><li name="374a" id="374a" class="graf graf--li graf-after--li">Legacy code: code on which expected behaviors (i.e. rules) can not be tested automatically, and thus, has become too complex to understand and maintain. At some point, even refactoring can not be applied without the risk of breaking expected behaviors of the new implementation, because these expected behaviors (rules) were not defined in the first place.</li><li name="3107" id="3107" class="graf graf--li graf-after--li">Open-source collaboration: consists of sharing the source code freely with the world, so that anyone can read, copy, and propose contributions by creating an alternative version out of the original source code: a “fork”.</li><li name="bfe4" id="bfe4" class="graf graf--li graf-after--li">Pull request: If the changes proposed by a contributor in their alternative version (the “fork”) benefit to the users of the original source code, they can request to integrate them back into the original source code. So-called “Pull requests” can be refused or approved by the trusted maintainers of the original source code, after they typically check that this contribution complies to expected behaviors (rules, or “automated tests”).</li></ul><p name="bb7f" id="bb7f" class="graf graf--p graf-after--li graf--trailing"><em class="markup--em markup--p-em">Note: This was written in the middle of the night as a draft, using my Android device. I published it as is, because I had no idea how to save it as a draft using Medium’s Android app. I’m sorry for the lack structure, references, and formatting. Please consider this as a work in progress. Nevertheless, I welcome your suggestions and comments that would help me elaborate further on these ideas. Thank you for your understanding! :-)</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@adrienjoly" class="p-author h-card">Adrien Joly</a> on <a href="https://medium.com/p/a35182573d87"><time class="dt-published" datetime="2016-06-14T02:13:11.115Z">June 14, 2016</time></a>.</p><p><a href="https://medium.com/@adrienjoly/software-development-principles-that-should-also-be-applied-to-our-laws-a35182573d87" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on February 10, 2020.</p></footer></article></body></html>

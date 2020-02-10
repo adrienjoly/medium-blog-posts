@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Thanks for this article!</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Thanks for this article!</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+FYI, here’s what I had to run to completely upgrade my mongodb service:
+</section>
+<section data-field="body" class="e-content">
+<section name="6173" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="bbf1" id="bbf1" class="graf graf--p graf--leading">Thanks for this article! It helped my upgrade from Mongodb 3.2 to 3.4.17 on my Ubuntu 16.04 DigitalOcean instance.</p><p name="30df" id="30df" class="graf graf--p graf-after--p">FYI, here’s what I had to run to completely upgrade my mongodb service:</p><ul class="postList"><li name="8e5e" id="8e5e" class="graf graf--li graf-after--p"><code class="markup--code markup--li-code">$ apt-get install mongodb-org=3.4.17</code></li><li name="39f8" id="39f8" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">$ mongod -v</code> =&gt; still 3.2...</li></ul><pre name="8cae" id="8cae" class="graf graf--pre graf-after--li">$ dpkg -l | grep mongo<br>ii  mongodb-org                       3.4.17                                     amd64        MongoDB open source document-oriented database system (metapackage)<br>ii  mongodb-org-mongos                3.2.19                                     amd64        MongoDB sharded cluster query router<br>ii  mongodb-org-server                3.2.19                                     amd64        MongoDB database server<br>ii  mongodb-org-shell                 3.2.19                                     amd64        MongoDB shell client<br>ii  mongodb-org-tools                 3.2.19                                     amd64        MongoDB tools</pre><pre name="ca06" id="ca06" class="graf graf--pre graf-after--pre">$ sudo apt-get install mongodb-org-tools=3.4.17<br><br>$ sudo apt-get install mongodb-org-shell=3.4.17<br><br>$ sudo apt-get install mongodb-org-server=3.4.17<br><br>$ sudo apt-get install mongodb-org-mongos=3.4.17<br><br>$ dpkg -l | grep mongo<br>ii  mongodb-org                       3.4.17                                     amd64        MongoDB open source document-oriented database system (metapackage)<br>ii  mongodb-org-mongos                3.4.17                                     amd64        MongoDB sharded cluster query router<br>ii  mongodb-org-server                3.4.17                                     amd64        MongoDB database server<br>ii  mongodb-org-shell                 3.4.17                                     amd64        MongoDB shell client<br>ii  mongodb-org-tools                 3.4.17                                     amd64        MongoDB tools<br><br>$ mongod -v<br>2018-09-15T12:17:05.803+0000 I CONTROL  [initandlisten] db version v3.4.17<br><br>$ sudo service mongodb restart</pre><p name="3e1d" id="3e1d" class="graf graf--p graf-after--pre graf--trailing">More info: <a href="https://github.com/openwhyd/openwhyd/issues/162#issuecomment-421559639" data-href="https://github.com/openwhyd/openwhyd/issues/162#issuecomment-421559639" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://github.com/openwhyd/openwhyd/issues/162#issuecomment-421559639</a></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@adrienjoly" class="p-author h-card">Adrien Joly</a> on <a href="https://medium.com/p/711f39c50d1c"><time class="dt-published" datetime="2018-09-15T12:25:42.631Z">September 15, 2018</time></a>.</p><p><a href="https://medium.com/@adrienjoly/thanks-for-this-article-711f39c50d1c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on February 10, 2020.</p></footer></article></body></html>
